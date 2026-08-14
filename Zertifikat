@@ -1,0 +1,6 @@
+pkg install easy-rsa
+easyrsa init-pki
+easyrsa build-ca
+easyrsa gen-dh
+easyrsa build-server-full server nopass
+easyrsa build-client-full client nopass
